@@ -16,9 +16,112 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		 <mapstruct.version>1.2.0.Final</mapstruct.version> 
 	</properties>
 
+
 	<dependencies>
+	<!-- https://mvnrepository.com/artifact/io.github.jhipster/jhipster-framework -->
+		<dependency>
+		    <groupId>io.github.jhipster</groupId>
+		    <artifactId>jhipster-framework</artifactId>
+		    <version>2.0.15</version>
+		</dependency>
+
+	 <dependency>
+            <groupId>io.dropwizard.metrics</groupId>
+            <artifactId>metrics-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.dropwizard.metrics</groupId>
+            <artifactId>metrics-annotation</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.dropwizard.metrics</groupId>
+            <artifactId>metrics-json</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.dropwizard.metrics</groupId>
+            <artifactId>metrics-jvm</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.dropwizard.metrics</groupId>
+            <artifactId>metrics-servlet</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.dropwizard.metrics</groupId>
+            <artifactId>metrics-servlets</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.datatype</groupId>
+            <artifactId>jackson-datatype-hppc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.datatype</groupId>
+            <artifactId>jackson-datatype-jsr310</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.datatype</groupId>
+            <artifactId>jackson-datatype-json-org</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.module</groupId>
+            <artifactId>jackson-module-afterburner</artifactId>
+        </dependency>
+         <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.jayway.jsonpath</groupId>
+            <artifactId>json-path</artifactId>
+            <scope>test</scope>
+            <!-- parent POM declares this dependency in default (compile) scope -->
+        </dependency>
+       <!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 -->
+		<dependency>
+		    <groupId>io.springfox</groupId>
+		    <artifactId>springfox-swagger2</artifactId>
+		    <version>2.7.0</version>
+		</dependency>
+
+       <!-- https://mvnrepository.com/artifact/io.springfox/springfox-bean-validators -->
+		<dependency>
+		    <groupId>io.springfox</groupId>
+		    <artifactId>springfox-bean-validators</artifactId>
+		    <version>2.7.0</version>
+		</dependency>
+ 		<!-- https://mvnrepository.com/artifact/com.ryantenney.metrics/metrics-spring -->
+		<dependency>
+		    <groupId>com.ryantenney.metrics</groupId>
+		    <artifactId>metrics-spring</artifactId>
+		    <version>3.0.0-RC1</version>
+		</dependency>
+		<dependency>
+            <groupId>de.flapdoodle.embed</groupId>
+            <artifactId>de.flapdoodle.embed.mongo</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <scope>test</scope>
+        </dependency>
+       <!-- https://mvnrepository.com/artifact/net.logstash.logback/logstash-logback-encoder -->
+		<dependency>
+		    <groupId>net.logstash.logback</groupId>
+		    <artifactId>logstash-logback-encoder</artifactId>
+		    <version>4.10</version>
+		</dependency>
+
+       <!-- https://mvnrepository.com/artifact/com.github.mongobee/mongobee -->
+		<dependency>
+		    <groupId>com.github.mongobee</groupId>
+		    <artifactId>mongobee</artifactId>
+		    <version>0.5</version>
+		</dependency>
+
 		<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
@@ -74,6 +177,28 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
         </dependency>
+          <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+         <!-- Security -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-data</artifactId>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct-jdk8</artifactId>
+            <version>${mapstruct.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct-processor</artifactId>
+            <version>${mapstruct.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        
 	</dependencies>
 
 	<build>

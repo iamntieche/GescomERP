@@ -26,7 +26,7 @@ public class PersistentAuditEvent implements Serializable{
 	private Instant auditEventDate;
 	
 	@Field("event_type")
-	private String auditEventtype;
+	private String auditEventType;
 	
 	private Map<String, String> data = new HashMap<>();
 	
@@ -48,11 +48,11 @@ public class PersistentAuditEvent implements Serializable{
 	public void setAuditEventDate(Instant auditEventDate) {
 		this.auditEventDate = auditEventDate;
 	}
-	public String getAuditEventtype() {
-		return auditEventtype;
+	public String getAuditEventType() {
+		return auditEventType;
 	}
-	public void setAuditEventtype(String auditEventtype) {
-		this.auditEventtype = auditEventtype;
+	public void setAuditEventtype(String auditEventType) {
+		this.auditEventType = auditEventType;
 	}
 	public Map<String, String> getData() {
 		return data;
